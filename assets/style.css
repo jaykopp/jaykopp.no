@@ -3,22 +3,30 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #121212;    /* Deep neutral background */
+    color: #e0e0e0;               /* Soft, readable light grey */
 }
 
 header {
-    background: #333;
-    color: white;
+    background: #1e1e1e;          /* Slightly lighter than body */
+    color: #ffffff;
     padding: 1rem;
+    border-bottom: 1px solid #2d2d2d;
 }
 
 nav a {
-    color: white;
+    color: #b0b0b0;
     margin-right: 1rem;
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #ffffff;
+}
+
 main {
     padding: 1.5rem;
+    text-align: center;
 }
 
 .profile {
@@ -28,6 +36,7 @@ main {
 
 .gallery {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -35,10 +44,4 @@ main {
     width: 200px;
     height: auto;
     border-radius: 8px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.5rem;
 }
